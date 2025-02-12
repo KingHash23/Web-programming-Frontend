@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1082" dy="715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    
+    <!-- Main Problem -->
+    <mxCell id="2" value="Main Problem" style="rounded=1;fillColor=#FFCC00;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="400" y="300" width="120" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- Root Causes -->
+    <mxCell id="3" value="Root Cause 1" style="rounded=1;fillColor=#FF9999;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="400" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="4" value="Root Cause 2" style="rounded=1;fillColor=#FF9999;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="500" y="400" width="120" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- Sub-Causes -->
+    <mxCell id="5" value="Sub-Cause 1A" style="rounded=1;fillColor=#FF6666;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="250" y="500" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="6" value="Sub-Cause 1B" style="rounded=1;fillColor=#FF6666;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="350" y="500" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="7" value="Sub-Cause 2A" style="rounded=1;fillColor=#FF6666;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="450" y="500" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="8" value="Sub-Cause 2B" style="rounded=1;fillColor=#FF6666;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="550" y="500" width="120" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- Effects -->
+    <mxCell id="9" value="Effect 1" style="rounded=1;fillColor=#99CCFF;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="300" y="200" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="10" value="Effect 2" style="rounded=1;fillColor=#99CCFF;strokeColor=#000000;" vertex="1" parent="1">
+      <mxGeometry x="500" y="200" width="120" height="50" as="geometry" />
+    </mxCell>
+    
+    <!-- Connections -->
+    <mxCell id="11" edge="1" parent="1" source="3" target="2" />
+    <mxCell id="12" edge="1" parent="1" source="4" target="2" />
+    <mxCell id="13" edge="1" parent="1" source="5" target="3" />
+    <mxCell id="14" edge="1" parent="1" source="6" target="3" />
+    <mxCell id="15" edge="1" parent="1" source="7" target="4" />
+    <mxCell id="16" edge="1" parent="1" source="8" target="4" />
+    <mxCell id="17" edge="1" parent="1" source="2" target="9" />
+    <mxCell id="18" edge="1" parent="1" source="2" target="10" />
+  </root>
+</mxGraphModel>
