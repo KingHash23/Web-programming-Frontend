@@ -47,4 +47,17 @@ console.log(number);
 // const x;
 //  x = 5;
 //  console.log(x);
+
+//  A function that calculates the products of two numbers.
+function calculateProduct(num1, num5){
+ let product = num1*num5;
+ console.log(product);
+}
+calculateProduct(5, 6);
  
+let message = "Hello, JavaScript!";
+console.log(message);
+
+console.log ("good morning!");
+console.log (2000);
+
