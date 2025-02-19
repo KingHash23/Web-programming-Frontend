@@ -94,6 +94,6 @@ if(!expired){
         console.log("Poor quality");
     }
 else{
-    console.log("Don't use ");
+    console.log("Don't use. ");
 }
 }
