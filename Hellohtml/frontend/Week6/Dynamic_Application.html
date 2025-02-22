@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Apllication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: burlywood;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
+    
+</head>
+<body onload="greet(calvin)">
+    <button onclick="alert('Hello Calvin Welcome to my Dynamic world 🌍🌍🦍🦍❤️')">click me</button>
+    <p id="text">This is the  my first HTML,CSS and JAVASCRIPT FUSION</p>
+    <button onclick="toggleText()">Change text</button>
+    <!-- Internal JavaScript -->
+    <button id="click">Internal javascript</button>
+    <input type="text" id="colorInput" placeholder="Enter a color">
+    <button onclick="backgroundchange()">Change background</button>
+    <script>
+        function greet(name) {
+            alert(`Hello ${name}, Welcome to my dynamic world! 🦍🦍🦍❤️🌍`);
+        }
+        function toggleText() {
+            var text = document.getElementById("text");
+            if (text.innerHTML === "Hello Calvin! This is the first HTML, CSS and JAVASCRIPT FUSION") {
+                text.innerHTML = "I am changing the text";
+            } else {
+                text.innerHTML = "Hello Calvin! This is the first HTML, CSS and JAVASCRIPT FUSION";
+            }
+        }
+        function isValidColor(strColor) {
+            // Create a temporary canvas to test the color
+            var canvas = document.createElement('canvas');
+            var ctx = canvas.getContext('2d');
+            
+            // Try to set the color
+            ctx.fillStyle = strColor;
+            
+            // If the color is invalid, fillStyle will be set to '#000000'
+            return ctx.fillStyle !== '#000000' || strColor.toLowerCase() === 'black';
+        }
+        
+        function backgroundchange() {
+            var color = document.getElementById("colorInput").value.trim();
+            
+            // Check if input is empty
+            if (!color) {
+                alert('Please enter a color!');
+                return;
+            }
+            
+            // Check if color is valid
+            if (!isValidColor(color)) {
+                alert('This color does not exist! Please enter a valid color name.');
+                return;
+            }
+            
+            // If we get here, the color is valid
+            document.body.style.backgroundColor = color;
+        }
+        
+         const buttonid = document.getElementById('click');
+          buttonid.onclick = function(){
+             alert('button clicked')   
+         }
+          buttonid.onmouseover =function(){ 
+              buttonid.style.color = "blue"}
+              buttonid.onmouseout =function(){ 
+                  buttonid.style.color = "yellow"
+              }
+    
+    </script>
+</body>
+</html>
