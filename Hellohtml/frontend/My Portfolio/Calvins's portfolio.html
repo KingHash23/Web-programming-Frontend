@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css"href = "./style.css">
 
         
+        
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         
@@ -16,13 +17,18 @@
         
         <!-- Custom CSS -->
         <link href="styles.css" rel="stylesheet">
+        <script src="mode.js"></script> 
     </head>
    
-    <body style=" background-color: #1E1E1E;">
+    <body style=" background-color: #1E1E1E;"  onload="switchMode()">
+        
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a style="color: white;" class="navbar-brand" href="#">Calvin's Portfolio🌍 </a>
+                <!-- button dark mode and light mode -->
+                 <button id="toggleMode" onclick="switchMode()" class="btn btn-light" style="margin-right: auto;">light Mode</button>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
